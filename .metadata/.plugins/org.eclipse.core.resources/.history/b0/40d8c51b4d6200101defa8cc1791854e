@@ -1,0 +1,33 @@
+package com.generation.exercises;
+
+import com.generation.library.Console;
+
+public class Lesson006es1 {
+
+	public static void main(String[] args) {
+		String city, proloco, donor;
+		int price, age;
+		String ticket ="";
+		Console.print("Inserisci città");
+		city = Console.readString();
+		if(city.equals("Milano")|| city.equals("Monza"))
+				{
+			price = 5;
+			ticket = "Discount Resident"
+		}
+		else 
+		{
+		Console.print("Inserisci i tuoi anni");
+		age=Console.readInt();
+			if(age<12 || age>65) {
+				price = 6;
+			}
+		
+		
+		}
+	}
+		
+
+	}
+
+

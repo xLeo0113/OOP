@@ -1,0 +1,27 @@
+package com.generation.lessons;
+
+import com.generation.library.Console;
+
+public class Lesson006 {
+
+	public static void main(String[] args) {
+		String city, province, profession, donor;
+		int price;
+		String ticket;
+		
+		Console.print("Inserisci città");
+		city = Console.readString();
+		
+		if (city.equals("Riedo"))
+		{
+			ticket = "Free ticket"; 
+		}
+		else
+		{
+			price = 10;
+			ticket = "Full ticket \Price "+price+" euro";
+		}
+		Console.print(ticket);
+	}
+
+}

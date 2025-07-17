@@ -1,0 +1,40 @@
+package com.generation.exercises;
+
+import com.generation.library.Console;
+
+public class Lesson006es3 {
+
+	public static void main(String[] args) {
+		// Creare un programma che chieda all’utente nome, data ed età e stampi il biglietto del museo per
+		//quel cliente. Il biglietto deve riportare nome, data e prezzo. Gli over 65 e gli under 12 pagano 5, tutti
+		// altri 10
+		
+		int age, prezzo;
+		String nome;
+		String data;
+		
+		Console.print("Scrivi il tuo nome");
+		nome= Console.readString();
+		Console.print("Inserisci la data di oggi");
+		data= Console.readString();
+		Console.print("Inserisci la tua età");
+		age = Console.readInt();
+		
+		
+		if(age<12 || age>65) {
+			prezzo = 5;
+		}else {
+			prezzo= 10;
+		}
+		
+		Console.print("\n ==== BIGLIETTO MUSEO ====");
+		Console.print("\nNome: "+nome);
+		Console.print("\nData: "+data);
+		Console.print("\nPrezzo: "+prezzo+ "Euro");
+		Console.print("\n===================\n");
+		
+		
+		
+	}
+
+}

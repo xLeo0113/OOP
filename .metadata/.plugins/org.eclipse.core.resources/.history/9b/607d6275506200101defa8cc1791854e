@@ -1,0 +1,52 @@
+package com.generation.exercises;
+
+import com.generation.library.Console;
+
+public class Lesson006es1 {
+
+	public static void main(String[] args) {
+		String city, proloco, donor;
+		int price, age;
+		String ticket ="";
+		Console.print("Inserisci città");
+		city = Console.readString();
+		Console.print("Inserisci i tuoi anni");
+		age=Console.readInt();
+		Console.print("Sei iscritto alla Proloco? (SI) (NO)");
+		proloco=Console.readString();
+		Console.print("Sei un donatore? (SI) (NO)");
+		donor=Console.readString();
+		
+		
+		if(city.equals("Milano")|| city.equals("Monza"))
+				{
+			price = 5;
+			ticket = "Discount Resident";
+			}
+			else if(age<12 || age>65) {
+				price = 6;
+				ticket = "Junior/Senior Discount";
+			}
+			else {
+				price= 10;
+			}
+		if (proloco.equals("SI")) {
+			price-=1;
+			ticket+= "Proloco Member";
+		}
+		if (donor.equals("SI")) {
+			price-=1;
+			ticket+="Donatore";
+		}
+		Console.print("Prezzo del biglietto "+price+ "euro");
+		Console.print("Motivo: " + ticket);
+		
+		
+		
+		
+	}
+		
+
+	}
+
+
